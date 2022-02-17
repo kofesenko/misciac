@@ -5,11 +5,10 @@ provider "aws" {
 
 resource "aws_db_instance" "default" {
   allocated_storage = 20
-  storage_type = "gp2"
-  engine = "postgres"
+  engine = "mysql"
   instance_class = "db.t2.micro"
   db_name = "products_db"
-  username = "postgres"
+  username = "mysql"
   password = var.password
   identifier = var.id
   publicly_accessible = true
