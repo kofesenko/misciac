@@ -8,7 +8,7 @@ resource "aws_db_instance" "default" {
   engine = "mysql"
   instance_class = "db.t2.micro"
   db_name = "products_db"
-  username = "mysql"
+  username = "devmysql"
   password = var.password
   identifier = var.id
   publicly_accessible = true
