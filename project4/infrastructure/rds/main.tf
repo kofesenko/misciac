@@ -8,7 +8,7 @@ resource "aws_db_instance" "default" {
   storage_type = "gp2"
   engine = "postgres"
   instance_class = "db.t2.micro"
-  name = "products_db"
+  db_name = "products_db"
   username = "postgres"
   password = var.password
   identifier = var.id
